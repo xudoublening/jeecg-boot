@@ -1,0 +1,19 @@
+{
+  "groups": [
+    {
+      "name": "spring.redis",
+      "type": "org.jeecg.boot.starter.redis.prop.JeecgRedisProperties",
+      "sourceType": "org.jeecg.boot.starter.redis.prop.JeecgRedisProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.redis.enable",
+      "type": "java.lang.Boolean",
+      "description": "是否开启Lettuce",
+      "sourceType": "org.jeecg.boot.starter.redis.prop.JeecgRedisProperties",
+      "defaultValue": true
+    }
+  ],
+  "hints": []
+}
