@@ -57,4 +57,22 @@
   }],
   "filters": [],
   "uri": "lb:ws://jeecg-demo"
+}, {
+  "id": "jeecg-risk",
+  "order": 4,
+  "predicates": [{
+    "name": "Path",
+    "args": {
+      "_genkey_0": "/group/**"
+    }
+  }],
+  "filters": [{
+    "name":  "RequestRateLimiter",
+    "args":  {
+      "key-resolver":"#{@ipKeyResolver}",
+      "redis-rate-limiter.replenishRate":  20,
+      "redis-rate-limiter.burstCapacity":  20
+    }
+  }],
+  "uri": "lb://jeecg-risk"
 }]
